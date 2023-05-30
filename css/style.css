@@ -1,0 +1,579 @@
+/* - - - | CSS RESET | - - - */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, summary, time {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, output, section, summary {
+	display: block;
+}
+
+meter, progress, mark, time {
+	display: inline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	text-align: left;
+}
+
+object {
+	vertical-align: top;
+	outline: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table, table td {
+	padding: 0;
+	border: none;
+	border-collapse: collapse;
+}
+
+input, select, textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	vertical-align: middle;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+/* - - - | GLOBAL | - - - */
+
+html {
+	min-width: 940px;
+}
+
+body {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1em;
+	color: #000;
+	overflow: hidden;
+}
+
+#glob {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	min-width: 940px;
+	min-height: 860px;
+	overflow: hidden;
+
+	font: 13px/20px Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+#gspinner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	background: #000 url(../images/ajax-loader.gif) 50% 50% no-repeat;
+}
+
+/* - - - | ELEMENTS | - - - */
+
+a {
+	color: #f00;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+p, .blo {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* - - - | aside | - - - */
+
+aside {
+	width: 301px;
+	position: absolute;
+	left: 36px;
+	top: 0;
+	height: 100%;
+	background: url(../images/-bg.png);
+}
+
+h1 {
+	position: absolute;
+	left: 45px;
+	top: 117px;
+	z-index: 1;
+}
+
+nav {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	text-align: center;
+	width: 301px;
+}
+
+nav>ul>li {
+	display: block;
+	width: 100%;
+}
+
+nav>ul>li>a {
+	font: 33px/55px 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+}
+
+nav>ul>li>a>span {
+	position: absolute;
+	border-bottom: 1px #000 solid;
+	border-top: 1px #fff solid;
+	width: 100%;
+	width: 0%;
+	bottom: 4px;
+	right: 0;
+
+	-webkit-transition: width 0.3s ease-out;
+	-moz-transition: width 0.3s ease-out;
+	-o-transition: width 0.3s ease-out;
+	transition: width 0.3s ease-out;
+}
+
+nav>ul>li>a:hover>span, nav>ul>.active>a>span, nav>ul>._hover>a>span {
+	width: 100%;
+	left: 0;
+}
+
+.bg-thumbs {
+	position: absolute;
+	left: 24px;
+	bottom: 74px;
+}
+
+.bg-thumbs ul {
+	margin-left: -18px;
+}
+
+.bg-thumbs li {
+	float: left;
+	margin-left: 18px;
+	margin-bottom: 16px;
+}
+
+.bg-thumbs li a {
+	display: block;
+	position: relative;
+}
+
+.bg-thumbs li a>span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: url(../images/bg-th-ov.png);
+	opacity: 1;
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.bg-thumbs li a:hover>span, .bg-thumbs li.active a>span {
+	opacity: 0;
+}
+
+/* - - - | #content | - - - */
+
+#content>ul>li {
+	width: 850px;
+	height: 536px;
+	background: url(../images/-bg.png);
+	position: absolute;
+	left: 357px;
+	top: 222px;
+	padding-top: 30px;
+}
+
+h2 {
+	font: 42px/1.2em 'Anton', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+
+#about_us .cols {
+	margin-left: -20px;
+	overflow: hidden;
+}
+
+#about_us .cols li {
+	margin-left: 20px;
+	float: left;
+}
+
+#about_us_readmore .cols {
+	margin-left: -20px;
+	overflow: hidden;
+}
+
+#about_us_readmore .cols li {
+	margin-left: 20px;
+	float: left;
+}
+
+#streamers .imgs {
+	margin-left: -20px;
+}
+
+#streamers .imgs li {
+	margin-left: 20px;
+	margin-bottom: 18px;
+	float: left;
+}
+
+#streamers .imgs li>div {
+	padding: 10px;
+	background: url(../images/ov.png);
+	overflow: hidden;
+}
+
+#streamers .imgs li a img {
+	margin-bottom: 10px;
+}
+
+.streamers-img {
+	width: 200px;
+	height: 113px;
+}
+
+.streamers-img2 a {
+	width: 836px;
+	height: 460px;
+}
+
+#partners .imgs {
+	margin-left: -20px;
+}
+
+#partners .imgs li {
+	margin-left: 20px;
+	margin-bottom: 18px;
+	float: left;
+}
+
+#partners .imgs li>div {
+	padding: 10px;
+	background: url(../images/ov.png);
+	overflow: hidden;
+}
+
+#partners .imgs li a img {
+	margin-bottom: 10px;
+}
+
+.partners-img {
+	width: 200px;
+	height: auto;
+}
+
+.partners-img2 a {
+	width: 836px;
+	height: 460px;
+}
+
+#comp .imgs {
+	margin-left: -20px;
+}
+
+#comp .imgs li {
+	margin-left: 20px;
+	margin-bottom: 18px;
+	float: left;
+}
+
+#comp .imgs li>div {
+	padding: 10px;
+	background: url(../images/ov.png);
+	overflow: hidden;
+}
+
+#comp .imgs li a img {
+	margin-bottom: 10px;
+}
+
+.comp-img {
+	width: 200px;
+	height: 113px;
+}
+
+.comp-img2 a {
+	width: 836px;
+	height: 460px;
+}
+
+#contacts .cols {
+	margin-left: -50px;
+}
+
+#contacts .cols li {
+	margin-left: 50px;
+	float: left;
+	width: 176px;
+}
+
+/* - - - | footer | - - - */
+
+footer {
+	width: 100%;
+	height: 43px;
+	background: #000;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+}
+
+footer .privacy {
+	position: absolute;
+	left: 121px;
+	top: 0;
+	font: 13px/43px 'Droid Sans', sans-serif;
+	color: #949394;
+}
+
+footer .soc-ico {
+	position: absolute;
+	right: 56px;
+	top: 9px;
+}
+
+footer .soc-ico li {
+	float: left;
+	margin-left: 10px;
+}
+
+footer .soc-ico li a {
+	position: relative;
+	top: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+footer .soc-ico li a:hover {
+	top: -6px;
+}
+
+.soc-icon {
+	position: absolute;
+	right: 56px;
+	top: 9px;
+}
+
+.soc-icon li {
+	float: left;
+	margin-left: 10px;
+}
+
+.soc-icon li a {
+	position: relative;
+	top: 0;
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.soc-icon li a:hover {
+	top: -6px;
+}
+
+.icon-img {
+	width: 30px;
+}
+
+/* - - - | js css | - - - */
+
+.bg-spinner {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background: url(../images/ajax-loader.gif) 50% 50% no-repeat;
+}
+
+.google_map {
+	width: 460px;
+	height: 238px;
+	margin-bottom: 20px;
+}
+
+/* - - - | additional classes | - - - */
+
+.white {
+	color: #fff;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.col-1, .col-2, .col-3 {
+	float: left;
+}
+
+.all {
+	text-align: left;
+}
+
+.alr {
+	text-align: right;
+}
+
+.alc {
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+a.und, .und a {
+	text-decoration: none;
+}
+
+a.und:hover, .und a:hover {
+	text-decoration: underline;
+}
+
+a.nocolor, .nocolor a {
+	color: inherit;
+}
+
+.upc {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+.nopa {
+	padding: 0;
+}
+
+.noma {
+	margin: 0;
+}
+
+.nobg {
+	background: none;
+}
+
+.nobd {
+	border: none;
+}
+
+.nofl {
+	float: none;
+}
+
+.dn {
+	display: none;
+}
+
+.clear {
+	clear: both;
+	line-height: 0;
+}
+
+/* - - - | custom boxes | - - - */
+
+dl.address {
+	overflow: hidden;
+}
+
+dl.address dd {
+	text-align: right;
+	clear: both;
+}
+
+dl.address dd span {
+	float: left;
+}
+
+dl.img-box, .img-box-set dl, dl.img-box dd, .img-box-set dl dd {
+	overflow: hidden;
+}
+
+dl.img-box dt, .img-box-set dl dt {
+	float: left;
+}
+
+.thumb {
+	width: 72px;
+	height: 55px;
+}
+
+.stag {
+	font-size: 16px;
+}
+
+.stxt {
+	font-size: 32px;
+}

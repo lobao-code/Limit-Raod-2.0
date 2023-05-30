@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="form-script.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        
+        <div class="formbold-main-wrapper">
+
+            <div class="formbold-form-wrapper">
+                <form id="form" name="form">
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="firstname" class="formbold-form-label">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Limit"
+                                class="formbold-form-input" />
+                        </div>
+                        <div>
+                            <label for="lastname" class="formbold-form-label">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Road" class="formbold-form-input" />
+                        </div>
+                    </div>
+        
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="email" class="formbold-form-label">E-Mail:</label>
+                            <input type="email" name="email" id="email" placeholder="limitroad@mail.com"
+                                class="formbold-form-input" />
+                        </div>
+                        <div>
+                            <label for="phone" class="formbold-form-label">Phone:</label>
+                            <input type="text" name="phone" id="phone" placeholder="+55 21 12345-6789"
+                                class="formbold-form-input" />
+                        </div>
+                    </div>
+        
+                    <div class="formbold-input-radio-wrapper">
+                        <label for="jobtitle" class="formbold-form-label">What is your interest?</label>
+        
+                        <div class="formbold-radio-flex">
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                                    Pilot
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                                    Streamer
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                                    Partnerships
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                                    Others
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="formbold-input-radio-wrapper">
+                        <label for="jobgame" class="formbold-form-label">If your interest is in being a Pilot/Streamer, which simulator?</label>
+        
+                        <div class="formbold-radio-flex">
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobgame" id="jobgame">
+                                    Assetto Corsa
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobgame" id="jobgame">
+                                    Assetto Corsa Competizione
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobgame" id="jobgame">
+                                    iRacing
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobgame" id="jobgame">
+                                    rFactor 2
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+        
+                            <div class="formbold-radio-group">
+                                <label class="formbold-radio-label">
+                                    <input class="formbold-input-radio" type="radio" name="jobgame" id="jobgame">
+                                    Others
+                                    <span class="formbold-radio-checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <label for="message" class="formbold-form-label">Message:</label>
+                        <textarea rows="6" name="message" id="message" placeholder="Type your message"
+                            class="formbold-form-input"></textarea>
+                    </div>
+        
+                    <button class="formbold-btn">Send message</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+    
+</html>
